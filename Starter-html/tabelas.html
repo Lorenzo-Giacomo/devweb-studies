@@ -1,0 +1,69 @@
+<!--
+    <table>
+        <tr>(tableRow)
+            <thead>
+                <th>(cabeçalho)
+            <tbody>
+                <td>(conteúdos)
+            <tfoot>(rodapé)
+
+            <rowspan="">(ocupa linhas)
+            <colsplan="">(ocupa colunas)
+
+        Prós
+        - Visualização de dados via linhas e colunas
+        - Boa acessibilidade para leitura dos dados
+
+        Contras
+        -Pouco flexível
+        -Precisa de estilização para melhor visualização
+
+        Não usar
+        -Para criar seu layout
+
+    Criando tabelas mais complexas
+
+    2 lojas
+        Quantos produtos foram produzidos, quantos vendidos e agrupado poor nome dos produtos
+
+
+-->
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Afoso Pena</th>
+            <th colspan="2" scope="colgroup">Antônio Pereira</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
